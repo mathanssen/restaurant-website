@@ -1,0 +1,135 @@
+<!--Wei Xu(101059762)-->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js\home.js" defer="true"></script>
+    <link rel="stylesheet" href="css/home.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="home.html">Menu</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html">Cart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="order.html">Order</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="user-profile.html">User Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sign-in.html">Sign Out</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <form class="row g-3">
+        <div class="mb-3 col-md-6">
+          <label for="titleFilter" class="form-label">Title</label>
+          <input type="text" class="form-control" id="titleFilter" />
+        </div>
+        <div class="mb-3 col-md-3">
+          <label for="maxPriceFilter" class="form-label">Maximum Price</label>
+          <input
+            type="number"
+            class="form-control"
+            min="0"
+            id="maxPriceFilter"
+          />
+        </div>
+        <div class="mb-3 col-md-3">
+          <label for="availableFilter" class="form-label">Availablity</label>
+          <select class="form-select" id="availableFilter">
+            <option value="1">Available</option>
+            <option value="0">Unavailable</option>
+            <option value="2" selected>All</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-3">
+          <button type="button" class="btn btn-primary" onclick="filter()">
+            Filter
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div
+      id="data"
+      class="container-fluid row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 row-cols-xxl-6 g-4"
+    ></div>
+
+    <div id="detailModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="pTitle"></h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <img id="pImage" class="img-fluid" />
+            <p id="pDescription"></p>
+            <p id="pRatings"></p>
+            <p id="pPrice"></p>
+            <p id="pCategory"></p>
+            <p id="pAvailable"></p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

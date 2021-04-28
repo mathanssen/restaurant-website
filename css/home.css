@@ -1,0 +1,26 @@
+/* Wei Xu(101059762) */
+
+.card:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.price {
+  color: #16a085;
+  font-size: 17px;
+  font-weight: 700;
+  margin: 0 2px 15px 0;
+  display: block;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.c1 {
+  margin-top: 50px;
+}
+
+.WHRadio {
+  aspect-ratio: 1;
+}

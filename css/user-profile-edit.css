@@ -1,0 +1,143 @@
+/* Matheus Hanssen 101303562 */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #4b2416;
+  font-family: "Open Sans", sans-serif;
+  background-color: #addef0;
+}
+
+a {
+  color: #4b2416;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.login-wrap {
+  width: 100%;
+  margin: auto;
+  max-width: 525px;
+  min-height: 720px;
+  position: relative;
+  background-color: #addef0;
+}
+
+.login-html {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 50px 70px 50px 70px;
+  padding-top: 35px;
+  background: #b4dbe9;
+}
+
+.login-html .tab {
+  font-size: 22px;
+  margin-right: 15px;
+  padding-bottom: 5px;
+  margin: 0 15px 10px 0;
+  display: inline-block;
+  border-bottom: 2px solid transparent;
+}
+
+.form-control {
+  float: left;
+}
+
+#city,
+#street {
+  width: 48%;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: #cee7f0;
+  margin-bottom: 30px;
+}
+
+#city {
+  margin-right: 5px;
+}
+
+.login-form .group {
+  margin-bottom: 15px;
+}
+
+.login-form .group .label,
+.login-form .group .input {
+  width: 100%;
+  color: #4b2416;
+  display: block;
+  font-size: 14px;
+}
+
+.login-form .group .button {
+  width: 100%;
+  color: #fff;
+  display: block;
+}
+
+.login-form .group .input,
+.login-form .group .button {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 25px;
+  background: #cee7f0;
+  outline: none;
+}
+
+.login-form .group .input:focus {
+  outline: none;
+}
+
+.login-form .group input[data-type="password"] {
+  -webkit-text-security: circle;
+}
+
+.login-form .group .label {
+  color: #4b2416;
+  font-size: 15px;
+}
+
+.login-form .group .button {
+  background: #4b2416;
+  font-size: 13px;
+}
+
+.current-profile {
+  width: 100%;
+  display: block;
+  font-size: 20px;
+  margin: 7px;
+  color: #4b2416;
+}
+
+.foot-lnk {
+  text-align: center;
+}
+
+#edit-profile {
+  text-align: center;
+  height: 50px;
+}
+
+#delete-account {
+  margin-top: 10px;
+  text-align: center;
+  background-color: firebrick;
+  color: white;
+  height: 50px;
+}

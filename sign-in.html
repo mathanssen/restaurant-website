@@ -1,0 +1,62 @@
+<!-- Matheus Hanssen 101303562 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/sign.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Login Form -->
+    <div class="login-wrap">
+      <div class="login-html">
+        <label class="tab">Sign In</label>
+        <div class="login-form">
+          <form name="signInForm" action="home.html">
+            <!-- Input Groups -->
+            <div class="group">
+              <label for="username" class="label">Username</label>
+              <input
+                id="username"
+                type="text"
+                class="input"
+                name="username"
+                required
+              />
+            </div>
+            <div class="group">
+              <label for="password" class="label">Password</label>
+              <input
+                id="password"
+                type="password"
+                class="input"
+                name="password"
+                data-type="password"
+                required
+              />
+            </div>
+            <!-- End of Input Groups -->
+            <div class="group">
+              <input
+                type="submit"
+                class="button"
+                value="Sign In"
+                onclick="logIn()"
+              />
+            </div>
+            <br />
+            <div class="foot-lnk">
+              <a href="sign-up.html">Not a member?</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- End of Login Form -->
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/sign.js"></script>
+  </body>
+</html>
